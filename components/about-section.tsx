@@ -9,7 +9,7 @@ export function AboutSection() {
             <div className="overflow-hidden rounded-xl border border-border/60 bg-card">
               <Image
                 src="/images/process-mapping.png"
-                alt="A consultant mapping a business process on a glass wall"
+                alt="A sunlit table with a monitor displaying a workflow diagram, a coffee cup, and notes"
                 width={880}
                 height={700}
                 className="h-full w-full object-cover"

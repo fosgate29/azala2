@@ -43,7 +43,7 @@ export function HeroSection() {
             <div className="overflow-hidden rounded-xl border border-border/60 bg-card">
               <Image
                 src="/images/hero-operations.png"
-                alt="An operations team reviewing workflow diagrams on a large screen"
+                alt="A bright desk with a laptop showing a dashboard beside a cup of coffee"
                 width={880}
                 height={620}
                 priority
