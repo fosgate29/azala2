@@ -16,7 +16,7 @@ export function HeroSection() {
         <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
           <div>
             <p className="mb-6 font-mono text-xs uppercase tracking-[0.2em] text-accent">
-              Azala
+              vantagemotion.ai
             </p>
             <h1 className="text-pretty text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
               We help businesses do AI right — starting with the process, not the tool.

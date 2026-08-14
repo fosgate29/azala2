@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
-// TODO: replace with your Calendly link, e.g. https://calendly.com/azala/60min
+// TODO: replace with your Calendly link, e.g. https://calendly.com/vantagemotion/60min
 export const CALENDLY_URL = ""
 
 const sizeClasses = {
