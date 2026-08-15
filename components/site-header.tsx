@@ -1,4 +1,4 @@
-import { AzalaLogo } from "@/components/azala-logo"
+import { VantageMotionLogo } from "@/components/vantage-motion-logo"
 import { BookCallButton } from "@/components/book-call-button"
 
 const navLinks = [
@@ -12,9 +12,9 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <a href="#top" className="flex items-center gap-2" aria-label="Azala home">
-          <AzalaLogo className="h-5 w-5 text-accent" />
-          <span className="text-base font-semibold tracking-tight">Azala</span>
+        <a href="#top" className="flex items-center gap-2" aria-label="vantagemotion.ai home">
+          <VantageMotionLogo className="h-5 w-5 text-accent" />
+          <span className="text-base font-semibold tracking-tight">vantagemotion.ai</span>
         </a>
 
         <nav aria-label="Main" className="hidden items-center gap-8 lg:flex">

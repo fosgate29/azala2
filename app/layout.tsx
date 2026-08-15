@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Azala — Business Automation & AI Consultancy',
+  title: 'vantagemotion.ai — Business Automation & AI Consultancy',
   description:
     'We help businesses do AI right — starting with the process, not the tool. Business analysis, process engineering and AI automation.',
   generator: 'v0.app',
