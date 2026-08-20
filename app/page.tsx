@@ -1,4 +1,5 @@
 import { AboutSection } from "@/components/about-section"
+import { AiProvidersBar } from "@/components/ai-providers-bar"
 import { CtaSection } from "@/components/cta-section"
 import { HeroSection } from "@/components/hero-section"
 import { SiteFooter } from "@/components/site-footer"
@@ -15,6 +16,7 @@ export default function Page() {
         <HeroSection />
         <AboutSection />
         <WhatWeBuildSection />
+        <AiProvidersBar />
         <WhoWeWorkWithSection />
         <WhatsIncludedSection />
         <CtaSection />
