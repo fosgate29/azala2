@@ -1,6 +1,6 @@
 const services = [
   ["Claude", "anthropic"],
-  ["Grok", "xai"],
+  ["Grok", "grok-xai"],
   ["Docs", "google-docs"],
   ["Sheets", "google-sheets"],
   ["Stripe", "stripe"],
@@ -26,7 +26,7 @@ export function AiProvidersBar() {
             className="flex shrink-0 items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground/85 transition-colors hover:border-accent hover:text-accent"
           >
             <img
-              src={`https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/${slug}/light.svg`}
+              src={`https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/${slug}/default.svg`}
               alt={`${name} symbol`}
               width="20"
               height="20"
