@@ -1,47 +1,41 @@
-const providers = [
-  {
-    name: "Claude",
-    logo: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/anthropic/light.svg",
-  },
-  {
-    name: "Grok",
-    logo: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/xai/light.svg",
-  },
-  {
-    name: "ChatGPT",
-    logo: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/openai/light.svg",
-  },
-  {
-    name: "Gemini",
-    logo: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-gemini/light.svg",
-  },
-]
+const services = [
+  ["Claude", "anthropic"],
+  ["Grok", "xai"],
+  ["Docs", "google-docs"],
+  ["Sheets", "google-sheets"],
+  ["Stripe", "stripe"],
+  ["Salesforce", "salesforce"],
+  ["Slack", "slack"],
+  ["Meta", "meta"],
+  ["Gmail", "gmail"],
+  ["Zoom", "zoom"],
+  ["Drive", "google-drive"],
+  ["Notion", "notion"],
+  ["Gemini", "google-gemini"],
+] as const
+
+const serviceItems = [...services, ...services]
 
 export function AiProvidersBar() {
   return (
-    <section aria-label="AI providers we work with" className="border-b border-border/60">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-4 py-8 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          Working with leading AI providers
-        </p>
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-3 md:justify-end md:gap-x-8">
-          {providers.map((provider) => (
-            <div
-              key={provider.name}
-              className="flex items-center gap-2 text-base font-semibold tracking-tight text-foreground/80 transition-colors hover:text-accent sm:text-lg"
-            >
-              <img
-                src={provider.logo}
-                alt={`${provider.name} symbol`}
-                width="24"
-                height="24"
-                loading="lazy"
-                className="size-5 object-contain opacity-85 sm:size-6"
-              />
-              <span>{provider.name}</span>
-            </div>
-          ))}
-        </div>
+    <section aria-label="Services we work with" className="overflow-hidden border-b border-border/60 py-4">
+      <div className="flex w-max animate-[service-ticker_34s_linear_infinite] items-center gap-3 px-4 motion-reduce:animate-none sm:gap-4">
+        {serviceItems.map(([name, slug], index) => (
+          <div
+            key={`${name}-${index}`}
+            className="flex shrink-0 items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground/85 transition-colors hover:border-accent hover:text-accent"
+          >
+            <img
+              src={`https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/${slug}/light.svg`}
+              alt={`${name} symbol`}
+              width="20"
+              height="20"
+              loading="lazy"
+              className="size-5 object-contain opacity-90"
+            />
+            <span>{name}</span>
+          </div>
+        ))}
       </div>
     </section>
   )
