@@ -29,7 +29,16 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <BookCallButton className="h-9 shrink-0 px-3 text-[0.7rem] sm:px-4 sm:text-[0.8rem]" />
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+          <a
+            href="tel:5162531317"
+            className="text-xs font-medium text-accent transition-colors hover:text-foreground sm:text-sm"
+            aria-label="Call us at 516-253-1317"
+          >
+            516-253-1317
+          </a>
+          <BookCallButton className="h-9 px-3 text-[0.7rem] sm:px-4 sm:text-[0.8rem]" />
+        </div>
       </div>
     </header>
   )

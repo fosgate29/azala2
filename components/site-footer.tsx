@@ -8,9 +8,18 @@ export function SiteFooter() {
           <VantageMotionLogo className="h-4 w-4 text-accent" />
           <span className="text-sm font-semibold tracking-tight">vantagemotion.ai</span>
         </div>
-        <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
-          Business Analysis · Process Engineering · AI Automation
-        </p>
+        <div className="flex flex-col gap-2">
+          <a
+            href="tel:5162531317"
+            className="text-sm font-medium text-accent transition-colors hover:text-foreground"
+            aria-label="Call us at 516-253-1317"
+          >
+            516-253-1317
+          </a>
+          <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
+            Business Analysis · Process Engineering · AI Automation
+          </p>
+        </div>
         <p className="text-xs text-muted-foreground">
           © {new Date().getFullYear()} vantagemotion.ai. All rights reserved.
         </p>
