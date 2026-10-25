@@ -15,7 +15,7 @@ export default function Page() {
       <SiteHeader />
       <div className="flex items-center justify-center gap-2 border-b border-border/60 px-4 py-3 text-sm font-medium text-muted-foreground">
         <Phone aria-hidden="true" className="size-4 text-accent" />
-        <span>516-253-1317</span>
+        <span>+1 516-253-1317</span>
       </div>
       <main>
         <HeroSection />
