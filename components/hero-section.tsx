@@ -23,8 +23,8 @@ export function HeroSection() {
             </h1>
             <p className="mt-6 max-w-xl text-pretty leading-relaxed text-muted-foreground">
               Putting AI on a broken process only makes it fail faster. Sometimes the
-              answer is AI. Sometimes it isn&apos;t. We&apos;ll tell you honestly. Give us a call
-              at (516) 253-1317 to talk through what your business needs.
+              answer is AI. Sometimes it isn&apos;t. We&apos;ll tell you honestly. Give us a call at (516) 253-1317 or email us at
+              blbest@vantagemotion.ai to talk through what your business needs.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
